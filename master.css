@@ -1,0 +1,152 @@
+body{
+  background-color: #EEE;
+  font: 15px/1.5 Arial;
+  padding: 0;
+  margin: 0;
+}
+
+/* Globle */
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.highlight, .current{
+  color: #EA5D00;
+}
+
+.dark{
+  background-color: #515151;
+  padding: 15px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pHeader{
+  float: left;
+  margin-right: 1em;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img{
+  max-width: 250px;
+  max-height: 250px;
+  background: #ddd;
+  border: 1px solid #bbb;
+  padding: 5px;
+}
+
+/* Header */
+
+header{
+  background-color: #515151;
+  color: #fff;
+  border-bottom: #EA5D00 solid 3px;
+}
+
+header #branding{
+  float: left;
+}
+
+header nav{
+  float: right;
+  margin-top: 32px;
+}
+
+header a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12pt;
+  text-transform: uppercase;
+}
+
+header a:hover{
+  padding-bottom: 5px;
+  color: #EA5D00;
+  transition: color 0.3s;
+}
+
+header li{
+  display: inline;
+  padding: 0 20px 0 20px;
+  cursor: default;
+  list-style: none;
+}
+
+/* Showcase */
+
+#showcase{
+  min-height: 300px;
+  background: url("./img/05.jpg") no-repeat 0 -40px;
+  text-align: center;
+  color: #211;
+  height: auto;
+  border-bottom: 3px solid #EA5D00;
+  color: #fff;
+  font-size: 12pt;
+}
+
+#showcase h1{
+  font-size: 28pt;
+  padding-top: 100px;
+  margin: 0;
+  color: #fff;
+}
+
+/* Main */
+
+article#main-col{
+  width: 65%;
+  float: left;
+}
+
+aside{
+  width: 30%;
+  float: right;
+}
+
+/* Cards */
+
+#cards{
+  background-color: #ddd;
+  border: 1px solid #bbb;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+
+footer{
+  color: #fff;
+  text-align: center;
+  background: #EA5D00;
+  padding: 17px;
+
+}
+
+@media only screen and (max-device-width: 768px){
+  header #branding,
+  article#main-col,
+  aside,
+  header nav{
+    float: none;
+    text-align: center;
+    width: 100%
+  }
+
+  header nav{
+    padding-bottom: 15px;
+  }
+
+  #showcase h1{
+    padding-top: 50px;
+  }
+}

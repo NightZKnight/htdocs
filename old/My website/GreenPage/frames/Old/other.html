@@ -1,0 +1,60 @@
+﻿<html>
+<head><title> Other </title>
+<script>
+if(top.location == self.location)
+{
+	self.location.replace("../default.html");
+}
+	
+function setFrame()
+{
+	window.top.frames['nav'].location.href="../../gameiso/Frames/nav.html";
+	window.top.frames['main'].location.href="../../gameiso/Frames/home.html";
+	window.top.frames['copy'].location.href="../../gameiso/Frames/copy.html";
+}
+
+</script>
+
+<style>
+#black:hover, #white:hover {background-color: black; color: white;}
+#green:hover, #white2:hover {background-color: 32C896; color: white;}
+#test:hover, #blackk:hover {background-color: 32C800; color: black;}
+</style>
+
+</head>
+
+<body bgcolor=green>
+<font color=yellow>
+
+<center><h1>Other</h1></center>
+
+<hr size=5 color=yellow>
+
+<p>These are web sites on this sever
+<br>
+<br>
+
+<table BORDER="2" CELLPADDING="2">
+<tr bgcolor="yellow" ID="black" onClick="window.top.location.href='../../gameiso/default.html'">
+<td width="1000000"><center><span style='font-size:20.0pt'><font ID="white">Game Iso</font></span></center>
+</tr>
+</table>
+
+<table BORDER="2" CELLPADDING="2">
+<tr bgcolor="yellow" ID="green" onClick="window.top.location.href='../../default.html'">
+<td width="1000000"><center><span style='font-size:20.0pt'><font ID="white2">Testage</font></span></center>
+</tr>
+</table>
+
+<table BORDER="2" CELLPADDING="2">
+<tr bgcolor="yellow" ID="test" onClick="window.top.location.href='../../zf2000/default.html'">
+<td width="1000000"><center><span style='font-size:20.0pt'><font ID="blackk">Zombie Factory 2000</font></span></center>
+</tr>
+</table>
+
+
+
+</font>
+</body>
+</html>
+

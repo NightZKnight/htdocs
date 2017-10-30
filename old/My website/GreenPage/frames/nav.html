@@ -1,0 +1,75 @@
+<html>
+<head>
+<script>
+if(top.location == self.location)
+{
+	self.location.replace("../default.html")
+}
+
+function setFrame(page)
+{
+	window.top.frames['nav'].location.href="../../Frames/nav.html"
+	window.top.frames['main'].location.href="../../Frames/home.html"
+	window.top.frames['copy'].location.href="../../Frames/copy.html"
+}
+
+</script>
+
+<style>
+#a1:hover, #a2:hover {background-color:   green; color: yellow;}
+#b1:hover, #b2:hover {background-color: #555500; color: yellow;}
+#c1:hover, #c2:hover {background-color: #991111; color: ffffdd;}
+</style>
+
+</head>
+
+<body bgcolor=green>
+
+
+<table BORDER="2" CELLPADDING="2">
+
+<tr bgcolor="yellow" ID="a1" onClick="window.top.frames['main'].location.href='home.html'">
+<td width="500"><center><font ID="a2">Home</font></center>
+</tr>
+
+</table><br>
+
+<table BORDER="2" CELLPADDING="2">
+
+<tr bgcolor="yellow" ID="a1" onClick="window.top.frames['main'].location.href='other.html'">
+<td width="500"><center><font ID="a2">Other</font></center>
+</tr>
+
+</table><br>
+
+<table BORDER="2" CELLPADDING="2">
+
+<tr bgcolor="yellow" ID="b1" onClick="window.top.frames['main'].location.href='butty.html'">
+<td width="500"><center><font ID="b2">Brown Butty Butt</font></center>
+
+</tr>
+
+<tr bgcolor="yellow" onMouseover="this.bgColor='#99dd00'"onMouseout="this.bgColor='yellow'" onClick="window.top.frames['main'].location.href='barf.html'">
+<td><center>Green Barf</center>
+
+<tr bgcolor="yellow" onMouseover="this.bgColor='#669900'"onMouseout="this.bgColor='yellow'" onClick="window.top.frames['main'].location.href='sicklym.html'">
+<td><center>Green Sickly Man</center>
+
+<tr bgcolor="yellow" onMouseover="this.bgColor='#ffdd00'"onMouseout="this.bgColor='yellow'" onClick="window.top.frames['main'].location.href='pee.html'">
+<td><center>Peepeey Pee</center>
+
+<tr bgcolor="yellow" ID="c1" onClick="window.top.frames['main'].location.href='midget.html'">
+<td><center><font ID=c2>Red Tiny Midget</font></center>
+
+<tr bgcolor="yellow" onMouseover="this.bgColor='#aaaa00'"onMouseout="this.bgColor='yellow'" onClick="window.top.frames['main'].location.href='foot.html'">
+<td><center>Stinky Foot</center>
+
+<tr bgcolor="yellow" onMouseover="this.bgColor='#ffffdd'"onMouseout="this.bgColor='yellow'" onClick="window.top.frames['main'].location.href='man.html'">
+<td><center>White Old Man</center>
+
+</tr>
+
+</table>
+</center>
+</body>
+</html>

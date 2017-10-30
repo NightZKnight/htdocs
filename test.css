@@ -1,0 +1,48 @@
+body {
+  background: url("./img/05.jpg") no-repeat;
+  background-size: cover;
+  font: 12pt/1.5 Arial;
+}
+
+nav{
+  margin: auto;
+}
+
+ /* nav */
+
+ul a{
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul li{
+  float: left;
+  background: black;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  opacity: 0.8;
+  margin-right: 3px;
+}
+
+ul li ul li{
+  display: none;
+}
+
+ul li:hover{
+  background: green;
+  transition: background 0.3s;
+  opacity: 0.8;
+}
+
+ul li:hover ul li{
+  display: block;
+}

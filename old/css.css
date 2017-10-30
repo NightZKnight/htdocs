@@ -1,0 +1,125 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	font-family: Arial;
+	margin: 1%;
+}
+
+#header
+{
+	background-color: gray;
+	padding: 2.5em 1.5em;
+}
+
+#links
+{
+	float: left;
+	width: 100%;
+	background-color: #111;
+	list-style-type: none;
+	display: inline;
+	position: relative;
+	box-shadow: 0 .5em 1em -.3em rgba(0,0,0,0.2);
+}
+
+li a
+{
+	text-decoration: none;
+	padding: 1em 1em;
+	color: white;
+	display: block;
+}
+
+#links li
+{
+	float: left;
+	transition: background-color 0.3s;
+}
+
+#links li:hover
+{
+	background-color: #870000;
+	transition: background-color 0.3s;
+}
+
+.dropdown
+{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdownC
+{
+	display: none;
+	position: absolute;
+	background-color: gray;
+	min-width: 160px;
+	color: red;
+	box-shadow: 0 .5em 1em -.3em rgba(0,0,0,0.2);
+}
+
+.dropdownC a
+{
+	color: black;
+}
+
+.dropdownC a:hover
+{
+	background-color: #AAA;
+}
+
+.dropdown:hover .dropdownC
+{
+	display: block;
+}
+
+#content
+{
+	padding: 1.4em 1em;
+	margin: 0 0 0 0;
+	clear: left;
+	float: left;
+	display: inline;
+	width: 80%;
+	background-color: #f2f2f2;
+}
+
+#sidebar
+{
+	background-color: gray;
+	float: right;
+	padding: 1.4em 1em;
+	margin: 0 0 1% 0;
+	height: 50%;
+	width: 15%;
+	display: inline;
+}
+
+#footer
+{
+	clear: both;
+	text-align: center;
+	background-color: gray;
+	padding: 1.2em;
+	box-shadow: 0 .5em 1em -.3em rgba(0,0,0,0.2);
+}
+
+#cool
+{
+	border: 1px solid #00CED1;
+	border-radius: 5px;
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+}
+
+#cool:hover
+{
+	background-color: #00CED1;
+	transition: background-color 0.3s;
+}
