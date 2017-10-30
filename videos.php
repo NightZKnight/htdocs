@@ -7,21 +7,7 @@
   </head>
   <body>
 
-    <header>
-      <div class="container">
-        <div id="branding">
-            <h1><span class="highlight">Oh!</span> Yes inc.</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a class="current" href="videos.php">Videos</a></li>
-            <li><a href="./test">CipherSaber</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <?php include 'inc/header-nav.php'; ?>
 
     <section id="main-content">
       <div class="container">
@@ -53,9 +39,7 @@
       </div>
     </section>
 
-    <footer>
-        <p>This is automatically copyrighted &copy; 2017 losers</p>
-    </footer>
+    <?php include 'inc/footer.php'; ?>
 
   </body>
 </html>
