@@ -31,7 +31,7 @@
         <aside>
           <div class="dark">
             <h3>We are trash</h3>
-            <p>Do not let us throgh out the trash or we will kil everyone. asldasdfasdasd asdfa.sdfasdfasd.fa  das sdf as as dasdasd sdf asdasdfa sdasd.fasd asdfjsdlsdkfajd sd alsdasdjlksdfjeioeafdkznf dfa sdfs. d fsfeo aseoaf sdl;aksdf e as.</p>
+            <p>Do not let us through out the trash or we will kil everyone. asldasdfasdasd asdfa.sdfasdfasd.fa  das sdf as as dasdasd sdf asdasdfa sdasd.fasd asdfjsdlsdkfajd sd alsdasdjlksdfjeioeafdkznf dfa sdfs. d fsfeo aseoaf sdl;aksdf e as.</p>
           </div>
         </aside>
 
