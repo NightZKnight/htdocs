@@ -124,6 +124,8 @@ aside{
 
 #cards:hover{
   cursor: pointer;
+  background-color: #bbb;
+  transition: background-color 0.3s;
 }
 
 #about-cards{

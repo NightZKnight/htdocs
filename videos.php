@@ -16,11 +16,11 @@
           <h3>Things you should watch</h3>
           <p>plz dont not watch all these wonderful videos ok?</p>
 
-          <div id="cards">
-            Please this is only a test of the card system
+          <div id="cards" onclick="alert('this is a killer virus!')">
+            Please this is only a test of the card system.mp4
           </div>
           <div id="cards">
-            Please this is only the second test of the card system
+            Please this is only the second test of the card system.mkv
           </div>
 
           <p>
