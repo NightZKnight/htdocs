@@ -62,6 +62,7 @@
       $msg[$i] ^= $state[($state[$a] + $state[$j]) % 256];
     }
 
+    // echo decoded text
     foreach ($msg as $key) {
       echo chr($key);
     }
