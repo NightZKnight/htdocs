@@ -10,9 +10,10 @@
     <script type="text/javascript">
 
       function test(){
-
+        // ajax the rc4.php and reset the password input box
         $.post( "rc4.php", $("#test").serialize(), function(data){
           $("#hi").html(data);
+          $("form input[type=password]").val("");
         });
 
       }
