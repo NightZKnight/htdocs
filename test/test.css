@@ -1,0 +1,21 @@
+form{
+  text-align: center;
+  padding-top: 5em;
+}
+
+form input[type=button]{
+  background: #EA5D00;
+  padding: 8px;
+  border: none;
+  color: #fff;
+}
+
+form input[type=text], input[type=password]{
+  padding: 7px;
+}
+
+#hi{
+  width: 450px;
+  margin: auto;
+  text-align: center;
+}
