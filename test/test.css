@@ -3,7 +3,7 @@ form{
   padding-top: 5em;
 }
 
-form input[type=button]{
+form input[type=submit]{
   background: #EA5D00;
   padding: 8px;
   border: none;
