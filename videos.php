@@ -13,19 +13,22 @@
       <div class="container">
 
         <article id="main-col">
+
           <h3>Things you should watch</h3>
           <p>plz dont not watch all these wonderful videos ok?</p>
 
-          <div id="cards" onclick="alert('this is a killer virus!')">
-            Please this is only a test of the card system.mp4
-          </div>
-          <div id="cards">
-            Please this is only the second test of the card system.mkv
-          </div>
+          <div>
+            <img src="img\SWR-keyArt-tumb.jpg" alt="SWR Key Art" class="pHeader">
+            <div id="cards">Season 04 Episode 01</div>
+            <div id="cards">Season 04 Episode 01</div>
+            <div id="cards">Season 04 Episode 01</div>
+            <div id="cards">Season 04 Episode 01</div>
+            <div id="cards">Season 04 Episode 01</div>
+            <div id="cards">Season 04 Episode 01</div>
+            <div id="cards">Season 04 Episode 01</div>
+            <div style="display: grid;" id="cards">Season 04 Episode 01</div>
 
-          <p>
-            Bob is so dumb that he ran in the middle of the street. He ran there because he saw a car, and he thinks that cars can’t kill him. Bob is stupid. When Bob went in the middle of the street he was killed by a truck that couldn’t slow down fast enough, so Bob was crushed. “That’s too bad,” said one of the people that was walking down the street, but there was another person that liked Bob that ran in the middle of the street to drag the crushed Bob back to the side walk, but another truck came and crushed Sue too. “That’s the end of them for sure,” said someone on the sidewalk. Then the truck driver finely came and said, “Someone’s ought to clean up this mess,” so the truck driver drug the crushed people to the sidewalk, then a hour later they woke up and said, “What happened?” The people that saw him were so surprised that they all fainted except one the one that didn’t faint told a lot of people and those people told other people until all the people in the world knew what happened; and after exactly one minute all the people of the world fainted. Bob and Sue looked around and saw that all the people in the world fainted and they said, “NO NO NO NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!” and all their guts came out of their mouth and Bob and Sue fell in a little puddle of goo.
-          </p>
+          </div>
 
         </article>
 

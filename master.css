@@ -120,6 +120,9 @@ aside{
   border: 1px solid #bbb;
   padding: 5px;
   margin-bottom: 5px;
+  margin-left: 5px;
+  display: grid;
+  display: -ms-grid;
 }
 
 #cards:hover{
@@ -143,7 +146,6 @@ footer{
   text-align: center;
   background: #EA5D00;
   padding: 17px;
-
 }
 
 @media only screen and (max-device-width: 768px){
@@ -153,14 +155,33 @@ footer{
   header nav{
     float: none;
     text-align: center;
-    width: 100%
+    width: 100%;
   }
 
   header nav{
     padding-bottom: 15px;
   }
 
+  header nav a{
+    font-size: 4em;
+    display: block;
+  }
+
+  header nav a:hover{
+    color: #fff;
+    border-radius: 5px;
+    background-color: #EA5D00;
+    transition: background-color 0.3s;
+  }
+
   #showcase h1{
     padding-top: 50px;
   }
+
+  header h1{
+    font-size: 6em;
+    border-bottom: #EA5D00 solid 3px;
+    width: i
+  }
+
 }
