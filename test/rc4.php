@@ -77,8 +77,14 @@
     // fclose($fb);
 
   }
+  // Check if file exists before tring to decode it
+  $filename = $_POST['name'];
 
-  rc4($_POST['name'], $_POST['key'])
+  if (file_exists($filename)) {
+      rc4($_POST['name'], $_POST['key']);
+  } else {
+      echo "<b><i>$filename</i></b> does not exist";
+  }
 
 
  ?>
