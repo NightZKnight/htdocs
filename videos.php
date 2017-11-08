@@ -17,16 +17,25 @@
           <h3>Things you should watch</h3>
           <p>plz dont not watch all these wonderful videos ok?</p>
 
-          <div>
-            <img src="img\SWR-keyArt-tumb.jpg" alt="SWR Key Art" class="pHeader">
-            <div id="cards">Season 04 Episode 01</div>
-            <div id="cards">Season 04 Episode 01</div>
-            <div id="cards">Season 04 Episode 01</div>
-            <div id="cards">Season 04 Episode 01</div>
-            <div id="cards">Season 04 Episode 01</div>
-            <div id="cards">Season 04 Episode 01</div>
-            <div id="cards">Season 04 Episode 01</div>
-            <div style="display: grid;" id="cards">Season 04 Episode 01</div>
+          <div id="flex-grid">
+
+            <img src="img\SWR-keyArt-thumb.jpg" alt="SWR Key Art" class="pHeader">
+            <div>
+              <?php
+                $episode = 16;
+
+                for ($i=1; $i < $episode; $i++) {
+                  echo "<div id='cards' onclick=\"alert('plz NO!')\">Season 04 Episode ";
+                  if ($i < 10) {
+                    echo "0$i </div>\n";
+                  }
+                  else {
+                    echo "$i </div>\n";
+                  }
+                }
+
+               ?>
+            </div>
 
           </div>
 
