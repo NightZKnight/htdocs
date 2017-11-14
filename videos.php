@@ -25,12 +25,11 @@
                 $episode = 16;
 
                 for ($i=1; $i < $episode; $i++) {
-                  echo "<div id='cards' onclick=\"alert('plz NO!')\">Season 04 Episode ";
+                  echo "<div id='cards'>Season 04 Episode ";
                   if ($i < 10) {
-                    echo "0$i </div>\n";
-                  }
-                  else {
-                    echo "$i </div>\n";
+                      echo "0$i </div>\n";
+                  } else {
+                      echo "$i </div>\n";
                   }
                 }
 
