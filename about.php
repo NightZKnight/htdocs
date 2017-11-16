@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="master.css">
     <title>Die Mr. Die | Home</title>
+
+    <script src="jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="login.js" charset="utf-8"></script>
+
   </head>
   <body>
 
@@ -26,6 +30,18 @@
           <div id="about-cards">
             <h3>Cleanup crew</h3>
             <p>We totally don’t do this</p>
+          </div>
+          <div id="about-cards">
+            <h3>You a Member?</h3>
+            <p>Then <a href="#" id="login">Login</a> </p>
+
+            <div id="eee" class="dim"></div>
+            <div id="popup" class="hide">
+              <input type="text" name="name" placeholder="User name">
+              <input type="password" name="password" placeholder="Password">
+              <input type="submit" name="submit" value="Submit">
+            </div>
+
           </div>
         </article>
 
