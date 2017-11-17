@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#popup').removeClass('hide');
   });
 
-// close popup when clicked away from
+// close popup
   $("#eee").on('click', function(event) {
     event.preventDefault();
     $('#eee').toggleClass('is-see');

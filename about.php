@@ -37,9 +37,11 @@
 
             <div id="eee" class="dim"></div>
             <div id="popup" class="hide">
-              <input type="text" name="name" placeholder="User name">
-              <input type="password" name="password" placeholder="Password">
-              <input type="submit" name="submit" value="Submit">
+              <form action="login.php" method="post" style="overflow: hidden;">
+                <input type="text" name="name" placeholder="User name">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" name="submit" value="Submit">
+              </form>
             </div>
 
           </div>
