@@ -9,7 +9,18 @@
     <?php
 
       $db = new PDO("sqlite:chat.db");
-       echo password_hash("password64", PASSWORD_DEFAULT);
+
+      $result = $db->prepare('SELECT secret FROM users WHERE name = ?');
+      $result->execute(array($_POST['name']));
+
+      $temp = $result->fetch();
+
+
+      if (password_verify($_POST['password'], $temp[0])) {
+        echo "yes!";
+      } else {
+        echo "YOU SUCK!";
+      }
 
      ?>
 
