@@ -78,6 +78,28 @@ div#popup{
   transition: opacity 0.3s;
 }
 
+form .wrapper{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+input+#bar{
+  display: inline-block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #EA5D00;
+  bottom: -1px;
+  transform: scale(0, 1);
+  transition: all .2s ease-in-out;
+}
+
+input:focus+#bar{
+  transform: scale(1);
+}
+
 div#popup input{
   display: block;
   margin: auto;
@@ -85,11 +107,11 @@ div#popup input{
 
 div#popup input[type="text"], div#popup input[type="password"]{
   width: 100%;
-  margin-bottom: 1.2em;
   padding: 1em;
   border: 0;
+  border-bottom: 1px gray solid;
   outline: none;
-  border-bottom: #EA5D00 2px solid
+  background: #EEE;
 }
 
 div#popup input[type="submit"]{
