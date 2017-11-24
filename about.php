@@ -17,21 +17,25 @@
       <div class="container">
 
         <article id="main-col">
-          <h3>Super Secret About Page</h3>
+          <h2>Super Secret About Page</h2>
           <p>This is the best about page on the face of the earth</p>
-          <div id="about-cards">
+
+          <div class="about-cards">
             <h3>Better</h3>
             <p>We make your stuff alot better <span style="font-size: 6pt;">don't ask</span></p>
           </div>
-          <div id="about-cards">
+
+          <div class="about-cards">
             <h3>Home improvment</h3>
             <p>We don't really do this but, why would you think that anywhy?</p>
           </div>
-          <div id="about-cards">
+
+          <div class="about-cards">
             <h3>Cleanup crew</h3>
             <p>We totally don’t do this</p>
           </div>
-          <div id="about-cards">
+
+          <div class="about-cards">
             <h3>You a Member?</h3>
             <p>Then <a href="#" id="login">Login</a> </p>
 
@@ -54,6 +58,7 @@
             </div>
 
           </div>
+
         </article>
 
         <aside>
