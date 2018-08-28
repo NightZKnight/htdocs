@@ -7,6 +7,14 @@
 
     <script src="LazyLoad.js" charset="utf-8"></script>
 
+    <meta property="og:title"         content="Bob the story" >
+    <meta property="og:description"   content="Bob is so dumb that he ran in the middle of the street. He ran there because he saw a car, and he thinks that cars can’t kill him. Bob is stupid. When Bob went in the middle of the street he was killed by a truck that couldn’t slow down fast enough, so Bob was crushed. " >
+    <meta property="og:type"          content="website" >
+    <meta property="og:url"           content="https://www.hibob.tk/" >
+    <meta property="og:image"         content="https://www.hibob.tk/img/1.jpg" >
+
+    <meta name="twitter:card" content="summary_large_image" />
+
   </head>
   <body>
 
