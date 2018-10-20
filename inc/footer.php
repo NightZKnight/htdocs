@@ -1,3 +1,3 @@
 <footer>
-    <p>This is automatically copyrighted &copy; 2017 losers</p>
+    <p>This is automatically copyrighted &copy; <?php echo date('Y'); ?> losers</p>
 </footer>
