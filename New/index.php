@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="master.css">
+    <script src="main.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css?family=Catamaran:500" rel="stylesheet">
     <title>Cards</title>
   </head>
@@ -13,12 +14,26 @@
       autocomplete-paths
 
     -->
+
+    <div id="dim" class="dim">
+      <form id="login-popup" class="card card-popup login hidden" action="#" method="post">
+        <h5>NAME</h5>
+        <input type="text" name="name" value="">
+        <h5>PASSWORD</h5>
+        <input type="text" name="secret" value="">
+        <h5> </h5>
+        <input class="submit" type="submit" name="Login" value="Login">
+      </form>
+    </div>
+
+
+
     <?php
 
     $db = new PDO('sqlite:info.sqlite');
     $sql = "SELECT * FROM articles";
 
-    foreach ($db->query($sql) as $row) {
+    foreach ($db->query($sql) as $row) { //go thru each row in database and out put as a card.
 
      ?>
 
@@ -39,8 +54,6 @@
     <?php } ?>
 
      <a id="add" href="#">add</a>
-
-
 
 
 

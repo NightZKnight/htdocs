@@ -22,20 +22,41 @@ div {
   padding: 0;
 }
 
+/*
+ ██████  ██       ██████  ██████   █████  ██
+██       ██      ██    ██ ██   ██ ██   ██ ██
+██   ███ ██      ██    ██ ██████  ███████ ██
+██    ██ ██      ██    ██ ██   ██ ██   ██ ██
+ ██████  ███████  ██████  ██████  ██   ██ ███████
+*/
 
 
-html {
-  display: grid;
-  width: 100%;
+h5 {
+  margin-bottom: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+███    ███  █████  ██ ███    ██
+████  ████ ██   ██ ██ ████   ██
+██ ████ ██ ███████ ██ ██ ██  ██
+██  ██  ██ ██   ██ ██ ██  ██ ██
+██      ██ ██   ██ ██ ██   ████
+*/
+
+
+  /* width: 100%; */
   /* grid-template-areas: "blank main ."
                        "blank main ."
                        "blank main .";
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr; */
-}
 
 body {
-  max-width: 416px;
+  width: 25em;
   margin: 0 auto;
   font-family: 'Catamaran', sans-serif;
   line-height: 1.15;
@@ -58,19 +79,19 @@ img {
   color: inherit;
 }
 
-article {
+.card{
   margin: 0 .8em;
   border-radius: 5px;
   background-color: #202225;
   padding: .8em;
   margin-top: 1em;
-  transition: box-shadow .2s, background-color .2s;
+  transition: box-shadow .2s ease, background-color .2s ease;
 }
 
-article:hover {
+.card:hover {
   box-shadow: 0 9px 20px 0 rgba(0,0,0,.32);
   background-color: #18191c;
-  transition: box-shadow .2s, background-color .2s;
+  transition: box-shadow .2s ease, background-color .2s ease;
 }
 
 #add {
@@ -83,4 +104,64 @@ article:hover {
 .dis {
   padding: .5em 0;
   font-size: 10pt;
+}
+
+/*
+██       ██████   ██████  ██ ███    ██
+██      ██    ██ ██       ██ ████   ██
+██      ██    ██ ██   ███ ██ ██ ██  ██
+██      ██    ██ ██    ██ ██ ██  ██ ██
+███████  ██████   ██████  ██ ██   ████
+*/
+
+.card-popup {
+  background: #36393f;
+  width: 25em;
+  margin: 0 auto;
+}
+
+.card-popup:hover {
+  background: #36393f;
+}
+
+.login input {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: .8em;
+  display: block;
+  border:1px solid #7289da;
+  border-radius: 3px;
+  padding: 1em;
+  color: inherit;
+}
+
+.login input[type='text'] {
+  background: #313339;
+
+}
+
+.submit {
+  background: #7289da;
+  font-weight: bold;
+}
+
+.dim {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.see-now {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
