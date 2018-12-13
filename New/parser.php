@@ -15,10 +15,14 @@
     -->
 
     <?php
+
       require_once 'OpenGraph.php';
 
-      $ogMeta = OpenGraph::fetch('https://www.dailywire.com/news/39177/pelosi-border-wall-immoral-we-need-secure-our-frank-camp');
+      // fetch OpenGraph data form URL
+      $urlToFetch = 'https://www.dailywire.com/news/39177/pelosi-border-wall-immoral-we-need-secure-our-frank-camp';
+      $ogMeta = OpenGraph::fetch($urlToFetch) or die('OpenGraph FAILED!');
 
+      // open database and get cashed data
       $db = new PDO("sqlite:info.sqlite") or die("pls kill me");
       $result = $db->prepare('INSERT INTO articles (title, dis, img, url) VALUES ( ?, ?, ?, ?)');
 
