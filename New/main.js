@@ -16,17 +16,18 @@ window.onload = function() {
   //onClick of the add button
   //taggle class see-now on the dim element
   //and hidden on the login element.
-  document.getElementById('add').onclick = function() {
-      //document.getElementById('login').classList.toggle('hidden');
-
-      // var elems = document.getElementsByClassName('dim');
-      // for(var i = 0; i < elems.length; i++) {
-      //   elems[i].classList.toggle('see-now');
-      // }
+  $('add').onclick = function() {
 
       $('dim').classList.toggle('see-now');
       $('login-popup').classList.toggle('hidden');
       scroll.top;
+
+  }
+
+  $('dim').onclick = function() {
+
+    $('dim').classList.toggle('see-now');
+    $('login-popup').classList.toggle('hidden');
 
   }
 

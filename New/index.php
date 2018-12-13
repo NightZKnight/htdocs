@@ -15,16 +15,18 @@
 
     -->
 
-    <div id="dim" class="dim">
-      <form id="login-popup" class="card card-popup login hidden" action="#" method="post">
-        <h5>NAME</h5>
-        <input type="text" name="name" value="">
-        <h5>PASSWORD</h5>
-        <input type="text" name="secret" value="">
-        <h5> </h5>
-        <input class="submit" type="submit" name="Login" value="Login">
-      </form>
-    </div>
+
+    <div id="dim" class="dim"></div>
+    <form id="login-popup" class="card card-popup hidden" action="#" method="post">
+      <h5>NAME</h5>
+      <input type="text" name="name" value="">
+      <h5>PASSWORD</h5>
+      <input type="text" name="secret" value="">
+      <h5> </h5>
+      <input class="submit" type="submit" name="Login" value="Login">
+    </form>
+
+
 
 
 

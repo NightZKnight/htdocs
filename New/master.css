@@ -115,6 +115,7 @@ img {
 */
 
 .card-popup {
+  position: fixed;
   background: #36393f;
   width: 25em;
   margin: 0 auto;
@@ -124,7 +125,7 @@ img {
   background: #36393f;
 }
 
-.login input {
+form input {
   width: 100%;
   margin: 0 auto;
   margin-bottom: .8em;
@@ -135,7 +136,7 @@ img {
   color: inherit;
 }
 
-.login input[type='text'] {
+form input[type='text'] {
   background: #313339;
 
 }
