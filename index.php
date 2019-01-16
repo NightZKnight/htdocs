@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="master.css">
-    <title>Die Mr. Die | Home</title>
-
-    <script src="LazyLoad.js" charset="utf-8"></script>
-
-    <meta property="og:title"         content="Bob the story" >
-    <meta property="og:description"   content="Bob is so dumb that he ran in the middle of the street. He ran there because he saw a car, and he thinks that cars can’t kill him. Bob is stupid. When Bob went in the middle of the street he was killed by a truck that couldn’t slow down fast enough, so Bob was crushed. " >
-    <meta property="og:type"          content="website" >
-    <meta property="og:url"           content="https://www.hibob.tk/" >
-    <meta property="og:image"         content="https://www.hibob.tk/img/1.jpg" >
-
-    <meta name="twitter:card" content="summary_large_image" />
-
+    <script src="main.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:500" rel="stylesheet">
+    <title>Cards</title>
   </head>
   <body>
 
-    <?php include 'inc/header-nav.php'; ?>
+    <!-- TODO stuff todo
+      use flex box for the layout and grid-template-area for the infore mations
+      autocomplete-paths
 
-    <section>
-      <div id="showcase">
-        <h1>We Make the Best Yes Buttons EVER</h1>
-        <p>Why would you want anything but the best?</p>
-      </div>
-    </section>
+    -->
 
-    <section id="main-content">
-      <div class="container">
+    <div class="top-bar">
+      <img src="img/logo.png" alt="logo">
+      <img src="img/text.svg" alt="logo-text">
 
-        <article id="main-col">
-          <h3>Secet information</h3>
-          <p>Fidget spinners are made out of pure cancer. Therefor Matthew thinks Bekfast is cool to say. And poodepi</p>
-          <p>
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./img/1-thumb.jpg" alt="The Donald" class="pHeader">
-            Bob is so dumb that he ran in the middle of the street. He ran there because he saw a car, and he thinks that cars can’t kill him. Bob is stupid. When Bob went in the middle of the street he was killed by a truck that couldn’t slow down fast enough, so Bob was crushed. “That’s too bad,” said one of the people that was walking down the street, but there was another person that liked Bob that ran in the middle of the street to drag the crushed Bob back to the side walk, but another truck came and crushed Sue too. “That’s the end of them for sure,” said someone on the sidewalk. Then the truck driver finely came and said, “Someone’s ought to clean up this mess,” so the truck driver drug the crushed people to the sidewalk, then a hour later they woke up and said, “What happened?” The people that saw him were so surprised that they all fainted except one the one that didn’t faint told a lot of people and those people told other people until all the people in the world knew what happened; and after exactly one minute all the people of the world fainted. Bob and Sue looked around and saw that all the people in the world fainted and they said, “NO NO NO NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!” and all their guts came out of their mouth and Bob and Sue fell in a little puddle of goo.
-          </p>
-        </article>
+      <input class="search-box" type="text" name="search" value="" placeholder="search">
 
-        <aside>
-          <div class="dark">
-            <h3>We are trash</h3>
-            <p>Do not let us through out the trash or we will kil everyone. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </aside>
+      <img src="img/cookie-admin.jpg" alt="admin-pic">
+      <svg class="carrot" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g><path fill="inherit" d="M14.1711599,9.3535 L9.99925636,13.529 L5.82735283,9.3535 C5.51262415,9.0385 5.73543207,8.5 6.18054835,8.5 L13.8179644,8.5 C14.2630807,8.5 14.4858886,9.0385 14.1711599,9.3535"></path></g></svg>
+    </div>
 
-      </div>
-    </section>
 
-    <?php include 'inc/footer.php'; ?>
+
+    <div class="wrapper">
+      <?php
+
+      $db = new PDO('sqlite:info.sqlite');
+      $sql = "SELECT * FROM articles";
+
+      foreach ($db->query($sql) as $row) { //go thru each row in database and out put as a card.
+
+       ?>
+
+       <a class="titleURL" href="<?php echo $row['url']; ?>" target="_blank">
+         <article class="card">
+           <div>
+             <?php echo $row['title']; ?>
+           </div>
+           <div class="dis">
+             <?php echo $row['dis']; ?>
+           </div>
+           <div class="picure">
+             <img src="<?php echo $row['img'] ?>" alt="this->og:image">
+           </div>
+         </article>
+       </a>
+
+      <?php } ?>
+    </div>
+
+
 
   </body>
 </html>

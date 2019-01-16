@@ -1,234 +1,44 @@
-body{
-  background-color: #EEE;
-  font: 15px/1.5 Arial;
-  padding: 0;
-  margin: 0;
-}
 
 /*
-██████  ██       ██████  ██████  ██      ███████
-██       ██      ██    ██ ██   ██ ██      ██
-██   ███ ██      ██    ██ ██████  ██      █████
-██    ██ ██      ██    ██ ██   ██ ██      ██
-██████  ███████  ██████  ██████  ███████ ███████
+██████  ███████ ███████ ███████ ████████
+██   ██ ██      ██      ██         ██
+██████  █████   ███████ █████      ██
+██   ██ ██           ██ ██         ██
+██   ██ ███████ ███████ ███████    ██
 */
 
 
-
-.container{
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0;
 }
 
-.highlight, .current{
-  color: #EA5D00;
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
 }
 
-.dark{
-  background-color: #515151;
-  padding: 1em;
-  color: #fff;
-  margin-top: 1em;
-  margin-bottom: 10px;
+/*
+ ██████  ██       ██████  ██████   █████  ██
+██       ██      ██    ██ ██   ██ ██   ██ ██
+██   ███ ██      ██    ██ ██████  ███████ ██
+██    ██ ██      ██    ██ ██   ██ ██   ██ ██
+ ██████  ███████  ██████  ██████  ██   ██ ███████
+*/
+
+
+h5 {
+  margin-bottom: 8px;
 }
 
-.pHeader{
-  float: left;
-  margin-right: 1em;
-}
-
-.hide{
+.hidden {
   display: none;
 }
 
-ul{
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-img{
-  max-width: 250px;
-  max-height: 250px;
-  background: #ddd;
-  border: 1px solid #bbb;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px #dddddd;
-  padding: 3px;
-}
-
-/*
-██       ██████   ██████  ██ ███    ██     ██████   ██████  ██████  ██    ██ ██████
-██      ██    ██ ██       ██ ████   ██     ██   ██ ██    ██ ██   ██ ██    ██ ██   ██
-██      ██    ██ ██   ███ ██ ██ ██  ██     ██████  ██    ██ ██████  ██    ██ ██████
-██      ██    ██ ██    ██ ██ ██  ██ ██     ██      ██    ██ ██      ██    ██ ██
-███████  ██████   ██████  ██ ██   ████     ██       ██████  ██       ██████  ██
-*/
-
-
-div#popup{
-  background: #EEE;
-  padding: 4em;
-  position: fixed;
-  border-radius: 3px;
-  top: 20%;
-  bottom: 20%;
-  left: 20%;
-  right: 20%;
-}
-
-.dim{
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s, visibility 0s 0.3s;
-  background: #000;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.is-see{
-  visibility: visible;
-  opacity: 0.5;
-  transition: opacity 0.3s;
-}
-
-form .wrapper{
-  position: relative;
-  display: inline-block;
-  margin-bottom: 1em;
-  width: 100%;
-}
-
-input+#bar{
-  display: inline-block;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: #EA5D00;
-  bottom: -1px;
-  transform: scale(0, 1);
-  transition: all .2s ease-in-out;
-}
-
-input:focus+#bar{
-  transform: scale(1);
-}
-
-div#popup input{
-  display: block;
-  margin: auto;
-}
-
-div#popup input[type="text"], div#popup input[type="password"]{
-  width: 100%;
-  padding: 1em;
-  border: 0;
-  border-bottom: 1px gray solid;
-  outline: none;
-  background: #EEE;
-}
-
-div#popup input[type="submit"]{
-  color: #fff;
-  font-size: 100%;
-  padding: 1.2em;
-  width: 100%;
-  border: 0;
-  border-radius: 2px;
-  background: #EA5D00;
-}
-
-/*
-███████ ██      ███████ ██   ██      ██████  ██████  ██ ██████
-██      ██      ██       ██ ██      ██       ██   ██ ██ ██   ██
-█████   ██      █████     ███       ██   ███ ██████  ██ ██   ██
-██      ██      ██       ██ ██      ██    ██ ██   ██ ██ ██   ██
-██      ███████ ███████ ██   ██      ██████  ██   ██ ██ ██████
-*/
-
-
-div#flex-grid{
-  display: flex;
-}
-
-div#flex-grid div{
-  width: 100%;
-}
-
-/*
-██   ██ ███████  █████  ██████  ███████ ██████
-██   ██ ██      ██   ██ ██   ██ ██      ██   ██
-███████ █████   ███████ ██   ██ █████   ██████
-██   ██ ██      ██   ██ ██   ██ ██      ██   ██
-██   ██ ███████ ██   ██ ██████  ███████ ██   ██
-*/
-
-
-header{
-  background-color: #515151;
-  color: #fff;
-  border-bottom: #EA5D00 solid 3px;
-}
-
-header #branding{
-  float: left;
-}
-
-header nav{
-  float: right;
-  margin-top: 32px;
-}
-
-header a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 12pt;
-  text-transform: uppercase;
-}
-
-header a:hover{
-  padding-bottom: 5px;
-  color: #EA5D00;
-  transition: color 0.3s;
-}
-
-header li{
-  display: inline;
-  padding: 0 20px 0 20px;
-  cursor: default;
-  list-style: none;
-}
-
-/*
-███████ ██   ██  ██████  ██     ██  ██████  █████  ███████ ███████
-██      ██   ██ ██    ██ ██     ██ ██      ██   ██ ██      ██
-███████ ███████ ██    ██ ██  █  ██ ██      ███████ ███████ █████
-     ██ ██   ██ ██    ██ ██ ███ ██ ██      ██   ██      ██ ██
-███████ ██   ██  ██████   ███ ███   ██████ ██   ██ ███████ ███████
-*/
-
-
-#showcase{
-  min-height: 300px;
-  background: url("./img/05.jpg") no-repeat 0 -40px;
-  text-align: center;
-  color: #211;
-  height: auto;
-  border-bottom: 3px solid #EA5D00;
-  color: #fff;
-  font-size: 12pt;
-}
-
-#showcase h1{
-  font-size: 28pt;
-  padding-top: 100px;
-  margin: 0;
-  color: #fff;
-}
 
 /*
 ███    ███  █████  ██ ███    ██
@@ -239,127 +49,186 @@ header li{
 */
 
 
-article#main-col{
-  width: 65%;
-  float: left;
+  /* width: 100%; */
+  /* grid-template-areas: "blank main ."
+                       "blank main ."
+                       "blank main .";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr; */
+
+body {
+  width: 25em;
+  margin: 0 auto;
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.15;
+  background-color: #36393f;
+  color: #dcddde;
 }
 
-aside{
-  width: 30%;
-  float: right;
+div.picure {
+  width: inherit;
 }
 
-/*
- ██████  █████  ██████  ██████  ███████
-██      ██   ██ ██   ██ ██   ██ ██
-██      ███████ ██████  ██   ██ ███████
-██      ██   ██ ██   ██ ██   ██      ██
- ██████ ██   ██ ██   ██ ██████  ███████
-*/
-
-
-#cards{
-  background-color: #ddd;
-  border: 1px solid #bbb;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px #dddddd;
-  padding: 5px;
-  padding-left: 8px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  display: grid;
-  display: -ms-grid;
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
 }
 
-#cards:hover{
-  cursor: pointer;
-  background-color: #bbb;
-  transition: background-color 0.3s;
+.wrapper {
+  margin-top: 3.5em;
 }
 
-.about-cards{
-  width: 50%;
-  box-shadow: 0px 2px 2px #dddddd;
-  background-color: #ddd;
-  border: 1px solid #bbb;
-  border-radius: 2px;
-  padding: 5px;
-  padding-left: 1.5em;
-  margin-bottom: 5px;
+.titleURL {
+  text-decoration: none;
+  color: inherit;
 }
 
-/*
-███████  ██████   ██████  ████████ ███████ ██████
-██      ██    ██ ██    ██    ██    ██      ██   ██
-█████   ██    ██ ██    ██    ██    █████   ██████
-██      ██    ██ ██    ██    ██    ██      ██   ██
-██       ██████   ██████     ██    ███████ ██   ██
-*/
-
-
-footer{
-  color: #fff;
-  text-align: center;
-  background: #EA5D00;
-  padding: 17px;
+.card{
+  margin: 0 .8em;
+  border-radius: 5px;
+  background-color: #202225;
+  padding: .8em;
   margin-top: 1em;
+  transition: box-shadow .2s ease, background-color .2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 9px 20px 0 rgba(0,0,0,.32);
+  background-color: #18191c;
+  transition: box-shadow .2s ease, background-color .2s ease;
+}
+
+#add {
+  position: fixed;
+  left: 3px; bottom:3px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 8pt;
+}
+
+.dis {
+  padding: .5em 0;
+  font-size: 10pt;
 }
 
 /*
-███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██    ██ ███████
-████  ████ ██      ██   ██ ██ ██   ██     ██    ██ ██    ██ ██      ██   ██  ██  ██  ██
-██ ████ ██ █████   ██   ██ ██ ███████     ██    ██ ██    ██ █████   ██████    ████   ███████
-██  ██  ██ ██      ██   ██ ██ ██   ██     ██ ▄▄ ██ ██    ██ ██      ██   ██    ██         ██
-██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██    ██    ███████
-                                              ▀▀
+████████  ██████  ██████      ██████   █████  ██████
+   ██    ██    ██ ██   ██     ██   ██ ██   ██ ██   ██
+   ██    ██    ██ ██████      ██████  ███████ ██████
+   ██    ██    ██ ██          ██   ██ ██   ██ ██   ██
+   ██     ██████  ██          ██████  ██   ██ ██   ██
 */
 
 
-@media only screen and (max-device-width: 768px){
-  header #branding,
-  article#main-col,
-  aside,
-  header nav{
-    float: none;
-    text-align: center;
+.top-bar {
+  padding: 0.25em;
+  position: fixed;
+  height: 2.8em;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  background: #202225;
+  display: flex;
+}
+
+.top-bar img {
+  height: 100%;
+}
+
+.carrot {
+	width: auto;
+	height: 1em;
+  margin: auto 0;
+
+}
+
+.carrot path {
+	stroke: #dcddde;
+	fill: #dcddde;
+}
+
+.search-box {
+  flex-grow: 1;
+  margin: 0 .4em;
+  border-color: #36393f;
+  width: 0;
+}
+
+.search-box:focus {
+  border-color: #7289da;
+  transition: all .2s ease;
+}
+
+.search-box::placeholder {
+  color: rgba(255, 255, 255, .25);
+}
+
+
+/*
+██       ██████   ██████  ██ ███    ██
+██      ██    ██ ██       ██ ████   ██
+██      ██    ██ ██   ███ ██ ██ ██  ██
+██      ██    ██ ██    ██ ██ ██  ██ ██
+███████  ██████   ██████  ██ ██   ████
+*/
+
+.card-popup {
+  position: fixed;
+  background: #36393f;
+  width: 25em;
+  margin: 0 auto;
+}
+
+.card-popup:hover {
+  background: #36393f;
+}
+
+input {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: .8em;
+  display: block;
+  border:1px solid #7289da;
+  border-radius: 3px;
+  padding: 1em;
+  color: inherit;
+}
+
+input[type='text'] {
+  background: #313339;
+
+}
+
+.submit {
+  background: #7289da;
+  font-weight: bold;
+}
+
+.dim {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.see-now {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+@media screen and  (max-width: 768px) {
+  body {
     width: 100%;
+    max-width: 100%;
   }
-
-  header nav{
-    padding-bottom: 15px;
-  }
-
-  header nav a{
-    font-size: 4em;
-    display: block;
-  }
-
-  header nav a:hover{
-    color: #fff;
-    border-radius: 5px;
-    background-color: #EA5D00;
-    transition: background-color 0.3s;
-  }
-
-  #showcase h1{
-    padding-top: 50px;
-  }
-
-  header h1{
-    font-size: 6em;
-    border-bottom: #EA5D00 solid 3px;
-    width: i
-  }
-
-  div#flex-grid{
-    display: block;
-    font-size: 40pt;
-  }
-
-  .pHeader{
-    float: none;
-    max-width: none;
-    max-height: none;
-  }
-
 }
