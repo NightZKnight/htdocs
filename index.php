@@ -10,16 +10,20 @@
   <body>
 
     <!-- TODO stuff todo
-      use flex box for the layout and grid-template-area for the infore mations
-      autocomplete-paths
+      Use flex box for the layout and grid-template-area for the infore mations
+      Autocomplete-paths
+      Fetch API MDN
+      Use transform for dropdown https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+                                 https://discordapp.com/
+      Remove login avatar dummy and replace with hidden login button
+      Read VueJs Docs
 
     -->
 
     <div class="top-bar">
-      <img src="img/logo.png" alt="logo">
       <img src="img/text.svg" alt="logo-text">
 
-      <input class="search-box" type="text" name="search" value="" placeholder="search">
+      <input class="search-box" type="text" name="search" value="" placeholder="Search">
 
       <img src="img/cookie-admin.jpg" alt="admin-pic">
       <svg class="carrot" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g><path fill="inherit" d="M14.1711599,9.3535 L9.99925636,13.529 L5.82735283,9.3535 C5.51262415,9.0385 5.73543207,8.5 6.18054835,8.5 L13.8179644,8.5 C14.2630807,8.5 14.4858886,9.0385 14.1711599,9.3535"></path></g></svg>
@@ -45,8 +49,8 @@
            <div class="dis">
              <?php echo $row['dis']; ?>
            </div>
-           <div class="picure">
-             <img src="<?php echo $row['img'] ?>" alt="this->og:image">
+           <div class="picture">
+             <img src="<?php echo $row['img'] ?>" alt="og:image">
            </div>
          </article>
        </a>

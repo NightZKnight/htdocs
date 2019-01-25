@@ -1,4 +1,9 @@
 .old/
 .jqapi/
 img/
-temp/
+tmp/
+.OhYesInc/
+other/
+cards/user_guide/
+cards/
+/tmp1/nbproject/private/
