@@ -39,6 +39,14 @@ h5 {
   display: none;
 }
 
+.flt-lt {
+   float: left;
+}
+
+.flt-rt {
+   float: right;
+}
+
 
 /*
 ███    ███  █████  ██ ███    ██
@@ -57,12 +65,15 @@ h5 {
   grid-template-columns: 1fr 1fr 1fr; */
 
 body {
-  width: 25em;
-  margin: 0 auto;
   font-family: 'Catamaran', sans-serif;
   line-height: 1.15;
   background-color: #36393f;
   color: #dcddde;
+}
+
+.wrapper {
+   width: 25em;
+   margin: 0 auto;
 }
 
 div.picture {
@@ -75,7 +86,7 @@ img {
   border-radius: 3px;
 }
 
-.wrapper {
+.container {
   margin-top: 3.5em;
 }
 
@@ -124,12 +135,11 @@ img {
   padding: 0.3em;
   position: fixed;
   height: 2.8em;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0px;
+  width: 100%;
   box-shadow: 0px 2px 5px rgba(17, 17, 17, 0.69);
   background: #202225;
-  display: flex;
+  display: block;
 }
 
 .top-bar img {
@@ -137,10 +147,9 @@ img {
 }
 
 .carrot {
-	width: auto;
-	height: 1em;
+  width: auto;
+  height: 1em;
   margin: auto 0;
-
 }
 
 .carrot path {
@@ -150,10 +159,16 @@ img {
 
 .search-box {
   font-size: 12pt;
-  flex-grow: 1;
   margin: 0 .4em;
   border-color: #36393f;
-  width: 0;
+  width: 20em;
+  height: 100%;
+}
+
+.avatar {
+   display: flex;
+   float: right;
+   height: 100%;
 }
 
 .search-box:focus {
