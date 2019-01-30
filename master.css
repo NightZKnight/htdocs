@@ -47,6 +47,14 @@ h5 {
    float: right;
 }
 
+.overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
 
 /*
 ███    ███  █████  ██ ███    ██
@@ -131,7 +139,7 @@ img {
 */
 
 
-.top-bar {
+header {
   padding: 0.3em;
   position: fixed;
   height: 2.8em;
@@ -142,7 +150,7 @@ img {
   display: block;
 }
 
-.top-bar img {
+header img {
   height: 97%;
 }
 
@@ -169,6 +177,50 @@ img {
    display: flex;
    float: right;
    height: 100%;
+   position: relative;
+}
+
+.avatar a {
+   display: block;
+   text-decoration: none;
+   color: #666;
+   padding: 5px 10px;
+   border-radius: 2px;
+   transition: all ease 200ms;
+}
+
+.avatar a:hover {
+   background-color: #eee;
+
+}
+
+.avatar ul {
+   position: absolute;
+   top: 3em;
+   left: -2em;
+   padding: 0;
+   margin: 0;
+   font-size: 12pt;
+   border-radius: 2px;
+   background-color: #fff;
+   list-style: none;
+   transition: all ease 125ms;
+}
+
+.hide {
+   visibility: hidden;
+   opacity: 0;
+   transform: scale(.9) translateY(-10px);
+}
+
+.show {
+   visibility: visible;
+   opacity: 1;
+   transform: scale(1) translateY(0);
+}
+
+.avatar li {
+   padding: 2px 4px;
 }
 
 .search-box:focus {
