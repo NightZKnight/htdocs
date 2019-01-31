@@ -28,7 +28,7 @@ window.onload = function() {
    var avatarUl = document.querySelector('.avatar ul');
 
    // toggles hide/show when avitar is clicked
-   avatar.onclick = function(e) {
+   avatar.onclick = function() {
       document.querySelector('.avatar ul').classList.toggle('hide');
       document.querySelector('.avatar ul').classList.toggle('show');
    }
