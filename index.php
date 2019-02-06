@@ -19,6 +19,7 @@
          Read VueJs Docs
          https://codepen.io/simoberny/pen/WMMqwL
 		   Text color hsla(0, 0%, 100%, 0.5)
+         https://torrentfreak.com/pirate-powered-cdns-operate-innovative-illicit-streaming-model-190203/
 
 
          -->
