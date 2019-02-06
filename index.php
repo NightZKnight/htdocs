@@ -18,7 +18,7 @@
          Remove login avatar dummy and replace with hidden login button
          Read VueJs Docs
          https://codepen.io/simoberny/pen/WMMqwL
-		 Text color hsla(0, 0%, 100%, 0.5)
+		   Text color hsla(0, 0%, 100%, 0.5)
 
 
          -->
