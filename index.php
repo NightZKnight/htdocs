@@ -20,7 +20,12 @@
          https://codepen.io/simoberny/pen/WMMqwL
 		   Text color hsla(0, 0%, 100%, 0.5)
          https://torrentfreak.com/pirate-powered-cdns-operate-innovative-illicit-streaming-model-190203/
+         https://www.reddit.com/r/Unexpected/comments/apsb1e/hes_got_some_moves/
+         add like functionality
 
+         https://www.dailywire.com/news/38900/watch-ocasio-cortez-compares-election-victory-ryan-saavedra
+         https://www.dailywire.com/news/39177/pelosi-border-wall-immoral-we-need-secure-our-frank-camp
+         
 
          -->
 
