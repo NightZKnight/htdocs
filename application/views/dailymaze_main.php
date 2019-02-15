@@ -41,10 +41,10 @@
       <section class="container">
          <?php
 
-         $db = new PDO('sqlite:info.sqlite');
-         $sql = "SELECT * FROM articles";
-
-         foreach ($db->query($sql) as $row): //go thru each row in database and out put as a card.
+         // $db = new PDO('sqlite:info.sqlite');
+         // $sql = "SELECT * FROM articles";
+		
+         foreach ($oglinks as $row): //go thru each row in database and out put as a card.
 
             ?>
 
@@ -66,6 +66,7 @@
             </a>
 
          <?php endforeach; ?>
+
       </section>
 
 
