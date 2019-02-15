@@ -54,6 +54,7 @@ class Opengraph implements Iterator
         $curl = curl_init($URI);
 
 		  // User made
+		  // CURLPROXY_SOCKS5
 		  // curl_setopt($curl, CURLOPT_PROXY, 'localhost:9150');
 		  // curl_setopt($curl, CURLOPT_PROXYTYPE, 7);
 

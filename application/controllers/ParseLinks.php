@@ -11,7 +11,7 @@ class ParseLinks extends CI_Controller {
 
 
       // fetch OpenGraph data form URL
-      $urlToFetch = 'https://www.dailywire.com/news/39177/pelosi-border-wall-immoral-we-need-secure-our-frank-camp';
+      $urlToFetch = 'https://www.dailywire.com/news/38900/watch-ocasio-cortez-compares-election-victory-ryan-saavedra';
       $ogMeta = Opengraph::fetch($urlToFetch) or die('OpenGraph FAILED!');
 
 		// ready data for the quary builder
@@ -29,12 +29,12 @@ class ParseLinks extends CI_Controller {
 
 		// cheack if title already exists
 		if ($query->num_rows()) {
-			echo("That link already exists!");
+			echo("<p>That link already exists!</p>");
 		}
-
+		// if not insert the data
 		else {
 			$this->db->insert('news', $data);
-			echo "Insert successful!";
+			echo "<p>Insert successful!</p>";
 		}
 
 
@@ -52,9 +52,7 @@ class ParseLinks extends CI_Controller {
       // foreach ($db->query($sql) as $row) {
       //   echo $row['title'] . "<br>";
       // }
-
-
-      $db = null;
+      // $db = null;
    }
 
 }
