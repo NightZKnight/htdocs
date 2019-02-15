@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 */
 
-class OpenGraph implements Iterator
+class Opengraph implements Iterator
 {
   /**
    * There are base schema's based on type, this is just
@@ -52,6 +52,11 @@ class OpenGraph implements Iterator
    */
 	static public function fetch($URI) {
         $curl = curl_init($URI);
+
+		  // User made
+		  // curl_setopt($curl, CURLOPT_PROXY, 'localhost:9150');
+		  // curl_setopt($curl, CURLOPT_PROXYTYPE, 7);
+
 
         curl_setopt($curl, CURLOPT_FAILONERROR, true);
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
