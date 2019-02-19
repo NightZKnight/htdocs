@@ -12,7 +12,6 @@ class Dailymaze extends CI_Controller {
 		$data['oglinks'] = $this->crud->get_articles();
 
 
-
 		$this->load->view('templates/header', ['title' => 'Cards']);
 		$this->load->view('dailymaze_main', $data);
 		$this->load->view('templates/footer');
