@@ -9,9 +9,9 @@ window.onload = function() {
    var ab = new Real('bob', 27);
    console.log(ab.age);
 
-   function $(id) {
-      return document.getElementById(id);
-   }
+   // function $(id) {
+   //    return document.getElementById(id);
+   // }
 
    //onClick of the add button
    //taggle class see-now on the dim element
@@ -47,6 +47,14 @@ window.onload = function() {
 
    }
 
+	// Auto size textarea
+	$("textarea").on('input', function () {
+
+		$("textarea").css('height', 'auto');
+		$("textarea").css('height', this.scrollHeight+'px');
+		console.log(this.scrollHeight+'px');
+		
+	})
 
 
 }

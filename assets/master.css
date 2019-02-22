@@ -173,6 +173,15 @@ header img {
   height: 100%;
 }
 
+.search-box:focus {
+  border-color: #7289da;
+  transition: all .2s ease;
+}
+
+.search-box::placeholder {
+  color: rgba(255, 255, 255, .25);
+}
+
 .avatar {
    display: flex;
    float: right;
@@ -223,15 +232,6 @@ header img {
    padding: 2px 4px;
 }
 
-.search-box:focus {
-  border-color: #7289da;
-  transition: all .2s ease;
-}
-
-.search-box::placeholder {
-  color: rgba(255, 255, 255, .25);
-}
-
 
 /*
 ██       ██████   ██████  ██ ███    ██
@@ -253,6 +253,7 @@ header img {
 }
 
 input {
+  font-size: 12pt;
   width: 100%;
   margin: 0 auto;
   margin-bottom: .8em;
@@ -266,6 +267,21 @@ input {
 input[type='text'] {
   background: #313339;
 
+}
+
+textarea {
+  color: inherit;
+  background: #313339;
+  border:1px solid #313339;
+  border-radius: 3px;
+  font-size: 12pt;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+  padding: .5em;
+  overflow: hidden;
+  resize: none;
 }
 
 .submit {
