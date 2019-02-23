@@ -1,13 +1,13 @@
 window.onload = function() {
 
-   function Real(name1, age1) {
-      this.name = name1;
-      this.age = age1;
-      this.hair = 'brown';
-   }
-
-   var ab = new Real('bob', 27);
-   console.log(ab.age);
+   // function Real(name1, age1) {
+   //    this.name = name1;
+   //    this.age = age1;
+   //    this.hair = 'brown';
+   // }
+	//
+   // var ab = new Real('bob', 27);
+   // console.log(ab.age);
 
    // function $(id) {
    //    return document.getElementById(id);
@@ -52,8 +52,7 @@ window.onload = function() {
 
 		$("textarea").css('height', 'auto');
 		$("textarea").css('height', this.scrollHeight+'px');
-		console.log(this.scrollHeight+'px');
-		
+
 	})
 
 

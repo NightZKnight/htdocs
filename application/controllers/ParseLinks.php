@@ -42,6 +42,22 @@ class ParseLinks extends CI_Controller {
 
 	public function index()
 	{
+
+		if (isset($_POST['links'])) {
+			$data1 = explode("\r\n", $_POST['links']);
+			foreach ($data1 as $value) {
+				if (filter_var($value, FILTER_VALIDATE_URL)) {
+
+					// echo htmlspecialchars($value);
+					echo $this->security->xss_clean($value);
+					// echo $value;
+					echo "<br>";
+				}
+			}
+			exit();
+		}
+
+
 		$this->load->view('templates/header', ['title' => 'Admin']);
 		$this->load->view('parse_links');
 		$this->load->view('templates/footer');

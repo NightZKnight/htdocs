@@ -1,5 +1,16 @@
-<div class="wrapper">
+<script type="text/javascript">
 
+	function senddata() {
+
+		$.post('parselinks', $('textarea').serialize(), function(data) {
+			$('.dis pre').html(data);
+		});
+
+	}
+
+</script>
+
+<div class="wrapper">
 
 
 	<section class="container">
@@ -11,7 +22,8 @@
 			</div>
 
 			<div class="dis">
-				<textarea name="links" value="" placeholder="Links"></textarea>
+				<textarea name="links" value="" placeholder="Links" onblur="senddata()"></textarea>
+				<pre></pre>
 			</div>
 
 			<div class="picture">
