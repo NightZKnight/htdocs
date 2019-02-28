@@ -50,7 +50,6 @@ class ParseLinks extends CI_Controller {
 
 					// echo htmlspecialchars($value);
 					echo $this->security->xss_clean($value);
-					// echo $value;
 					echo "<br>";
 				}
 			}
