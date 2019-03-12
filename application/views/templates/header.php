@@ -11,7 +11,9 @@
    <body>
 
 		<header>
-			<img class="flt-lt" src="<?php echo base_url('assets/img/text.svg') ?>" alt="logo-text">
+			<a href="<?php echo base_url(); ?>">
+				<img class="flt-lt" src="<?php echo base_url('assets/img/text.svg') ?>" alt="logo-text">
+			</a>
 
 			<div class="avatar">
 				<div class="overlay"></div>

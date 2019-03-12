@@ -10,7 +10,8 @@
    Text color hsla(0, 0%, 100%, 0.5)
    https://torrentfreak.com/pirate-powered-cdns-operate-innovative-illicit-streaming-model-190203/
    https://www.reddit.com/r/Unexpected/comments/apsb1e/hes_got_some_moves/
-   add like functionality
+   Add like functionality
+	Add the ability to add a message as one of the cards
 
    https://www.dailywire.com/news/38900/watch-ocasio-cortez-compares-election-victory-ryan-saavedra
    https://www.dailywire.com/news/39177/pelosi-border-wall-immoral-we-need-secure-our-frank-camp
@@ -33,18 +34,18 @@
 
             ?>
 
-            <a class="titleURL" href="<?php echo $row['url']; ?>" target="_blank">
+            <a class="titleURL" href="<?php echo $this->security->xss_clean($row['url']); ?>" target="_blank">
                <article class="card">
                   <div>
-                     <?php echo $row['title']; ?>
+                     <?php echo $this->security->xss_clean($row['title']); ?>
                   </div>
 
                   <div class="dis">
-                     <?php echo $row['dis']; ?>
+                     <?php echo $this->security->xss_clean($row['dis']); ?>
                   </div>
 
                   <div class="picture">
-                     <img src="<?php echo $row['img']; ?>" alt="og:image">
+                     <img src="<?php echo $this->security->xss_clean($row['img']); ?>" alt="og:image">
                   </div>
 
                </article>
