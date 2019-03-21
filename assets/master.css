@@ -152,6 +152,28 @@ img {
 	background-color: #dbe4e4;
 }
 
+.notification {
+	margin: 0 auto;
+	padding: 1em 1em;
+	width: 45em;
+	background-color: green;
+	border: 2px solid darkgreen;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 1em;
+	border-radius: 2px;
+	opacity: 0;
+	transform: perspective(450px) translate(0, -30px) rotateX(90deg);
+	transition: all ease 0.08s;
+}
+
+.next {
+	opacity: 1;
+	transform: perspective(450px) translate(0, 0) rotateX(0deg);
+}
+
+
 /*
 ████████  ██████  ██████      ██████   █████  ██████
    ██    ██    ██ ██   ██     ██   ██ ██   ██ ██   ██
