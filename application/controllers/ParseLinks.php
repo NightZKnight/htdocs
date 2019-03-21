@@ -9,6 +9,7 @@ class ParseLinks extends CI_Controller {
 		$this->load->library('opengraph');
       $this->load->database();
 
+
 		// check if data is a valid URL then fetch OpenGraph data form URL
       if (filter_var($urlToFetch, FILTER_VALIDATE_URL)) {
 
@@ -22,11 +23,11 @@ class ParseLinks extends CI_Controller {
 				'img' => $ogMeta->image,
 			);
 
-			// quary the first 10 letters of the og:title
+			// query the first 10 letters of the og:title
 			$this->db->like('title', substr($ogMeta->title, 0, 10));
 			$query = $this->db->get('news');
 
-			// cheack if title already exists
+			// check if title already exists
 			if ($query->num_rows()) {
 				echo("<p>That link already exists!</p>");
 			}
@@ -44,9 +45,9 @@ class ParseLinks extends CI_Controller {
 	{
 
 		if (isset($_POST['links'])) {
-			$data1 = explode("\r\n", $_POST['links']);
-			foreach ($data1 as $value) {
-				if (filter_var($value, FILTER_VALIDATE_URL)) {
+			$links = explode("\r\n", $_POST['links']);
+			foreach ($links as $value) {
+				if (filter_var(trim($value), FILTER_VALIDATE_URL)) {
 
 					// echo htmlspecialchars($value);
 					echo $this->security->xss_clean($value);
