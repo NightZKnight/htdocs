@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class ParseLinks extends CI_Controller {
 
-   public function parse($urlToFetch)
+   private function parse($urlToFetch)
    {
 		// require_once 'OpenGraph.php';
 		$this->load->library('opengraph');
@@ -15,12 +15,12 @@ class ParseLinks extends CI_Controller {
 
 			$ogMeta = Opengraph::fetch($urlToFetch) or die('OpenGraph FAILED!');
 
-			// ready data for the quary builder
+			// ready data for the query builder
 			$data = array(
 				'title' => $ogMeta->title,
-				'dis' => $ogMeta->description,
-				'url' => $ogMeta->url,
-				'img' => $ogMeta->image,
+				'dis' =>   $ogMeta->description,
+				'url' =>   $ogMeta->url,
+				'img' =>   $ogMeta->image,
 			);
 
 			// query the first 10 letters of the og:title
@@ -29,12 +29,13 @@ class ParseLinks extends CI_Controller {
 
 			// check if title already exists
 			if ($query->num_rows()) {
-				echo("<p>That link already exists!</p>");
+				echo "<p>That link already exists!</p>";
 			}
 			// if not insert the data
 			else {
 				$this->db->insert('news', $data);
 				echo "<p>Insert successful!</p>";
+				echo "<script>doo();</script>";
 			}
 
       }
@@ -50,7 +51,9 @@ class ParseLinks extends CI_Controller {
 				if (filter_var(trim($value), FILTER_VALIDATE_URL)) {
 
 					// echo htmlspecialchars($value);
-					echo $this->security->xss_clean($value);
+					$cleaned = $this->security->xss_clean($value);
+					$this->parse($cleaned);
+					echo $cleaned;
 					echo "<br>";
 				}
 			}

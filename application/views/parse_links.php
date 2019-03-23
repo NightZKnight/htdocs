@@ -10,6 +10,11 @@
 
 	function doo () {
 		$("div.notification").toggleClass('next');
+
+		// wait 2500 and disable notification
+		setTimeout(function () {
+          $("div.notification").toggleClass('next');
+      },2500)
 	}
 
 </script>
@@ -21,13 +26,12 @@
 
 		<article class="card">
 			<div>
-				Add Links separated by new lines
+				Add one link per line
 			</div>
 
 			<div class="dis">
-				<textarea name="links" value="" placeholder="Links" onblur="senddata()"></textarea>
-				<a class="button" href="#">Submit</a><br>
-				<a class="button" href="#" onclick="doo()">Doo</a>
+				<textarea name="links" placeholder="Links"></textarea>
+				<a class="button" href="#" onclick="senddata()">Submit</a><br>
 				<div></div>
 			</div>
 
@@ -39,7 +43,7 @@
 	</section>
 
 	<div class="notification">
-		<span>SUB TO PEWDEEPOO</span>
+		<span>Insert successful!</span>
 	</div>
 
 

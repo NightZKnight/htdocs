@@ -15,4 +15,9 @@ class Crud extends CI_Model {
 		return $quary->result_array();
 	}
 
+	public function put_articles($links)
+	{
+		
+	}
+
 }

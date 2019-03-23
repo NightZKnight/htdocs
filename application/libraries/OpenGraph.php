@@ -53,10 +53,10 @@ class Opengraph implements Iterator
 	static public function fetch($URI) {
         $curl = curl_init($URI);
 
-		  // User made
+		  // User Made
 		  // CURLPROXY_SOCKS5
-		  // curl_setopt($curl, CURLOPT_PROXY, 'localhost:9150');
-		  // curl_setopt($curl, CURLOPT_PROXYTYPE, 7);
+		  //curl_setopt($curl, CURLOPT_PROXY, 'localhost:9150');
+		  //curl_setopt($curl, CURLOPT_PROXYTYPE, 7);
 
 
         curl_setopt($curl, CURLOPT_FAILONERROR, true);
@@ -151,13 +151,14 @@ class Opengraph implements Iterator
 		return $page;
 	}
 
-  /**
-   * Helper method to access attributes directly
-   * Example:
-   * $graph->title
-   *
-   * @param $key    Key to fetch from the lookup
-   */
+	/**
+	 * Helper method to access attributes directly
+	 * Example:
+	 * $graph->title
+	 *
+	 * @param $key    Key to fetch from the lookup
+	 * @return int|mixed|string
+	 */
 	public function __get($key) {
 		if (array_key_exists($key, $this->_values)) {
 			return $this->_values[$key];
@@ -181,11 +182,12 @@ class Opengraph implements Iterator
 		return array_keys($this->_values);
 	}
 
-  /**
-   * Helper method to check an attribute exists
-   *
-   * @param $key
-   */
+	/**
+	 * Helper method to check an attribute exists
+	 *
+	 * @param $key
+	 * @return bool
+	 */
 	public function __isset($key) {
 		return array_key_exists($key, $this->_values);
 	}
